@@ -1,0 +1,47 @@
+[warning] /usr/bin/jxplorer: Unable to locate junit in /usr/share/java
+Jan 31, 2023 12:39:55 PM com.ca.directory.jxplorer.JXplorer printTime
+INFO: main start
+TIME: Tue Jan 31 12:39:55 CET 2023  (801)
+
+Jan 31, 2023 12:39:55 PM com.ca.directory.jxplorer.JXplorer checkJavaEnvironment
+INFO: running java from: /usr/lib/jvm/java-11-openjdk-amd64
+Jan 31, 2023 12:39:55 PM com.ca.directory.jxplorer.JXplorer checkJavaEnvironment
+INFO: running java version 11.0.17
+Jan 31, 2023 12:39:55 PM com.ca.directory.jxplorer.JXConfig getConfigDirectory
+WARNING: JX using configDirectory: /home/samer/.jxplorer/
+Jan 31, 2023 12:39:55 PM com.ca.directory.jxplorer.JXplorer checkAndCopy
+WARNING: Unable to find default file: /usr/share/jxplorer/csvconfig.txt.default -> not copying to : /home/samer/.jxplorer/csvconfig.txt
+Jan 31, 2023 12:39:55 PM com.ca.directory.jxplorer.JXConfig getConfigDirectory
+WARNING: JX using configDirectory: /home/samer/.jxplorer/
+Jan 31, 2023 12:39:55 PM com.ca.directory.jxplorer.JXplorer checkAndCopy
+WARNING: Unable to find default file: /usr/share/jxplorer/security.default -> not copying to : /home/samer/.jxplorer/security
+Jan 31, 2023 12:39:55 PM com.ca.directory.jxplorer.JXConfig getConfigDirectory
+WARNING: JX using configDirectory: /home/samer/.jxplorer/
+Jan 31, 2023 12:39:55 PM com.ca.directory.jxplorer.JXConfig setupLogger
+INFO: setting up logger
+XXX logging initially level WARNING with 0 parents=true
+java.lang.ClassNotFoundException: Error getting className: 'com.pegacat.jxworkbench.JXWBrowser' : java.util.zip.ZipException: File: 'com/pegacat/jxworkbench/JXWBrowser.class' not found
+	at com.ca.commons.cbutil.CBClassLoader.findClass(CBClassLoader.java:145)
+	at com.ca.commons.cbutil.CBClassLoader.findClass(CBClassLoader.java:88)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:589)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at com.ca.directory.jxplorer.JXplorer.createNewBrowser(JXplorer.java:508)
+	at com.ca.directory.jxplorer.JXplorer.createInitialWindows(JXplorer.java:454)
+	at com.ca.directory.jxplorer.JXplorer.JXplorerFullInit(JXplorer.java:93)
+	at com.ca.directory.jxplorer.JXplorer.<init>(JXplorer.java:76)
+	at com.ca.directory.jxplorer.JXplorer.main(JXplorer.java:58)
+Gtk-Message: 12:39:56.085: Failed to load module "canberra-gtk-module"
+Jan 31, 2023 12:39:56 PM com.ca.commons.cbutil.CBUtility readPropertyFile
+WARNING: No property list:
+/home/samer/.jxplorer/search_filters.txt
+Jan 31, 2023 12:39:56 PM com.ca.commons.cbutil.CBUtility readPropertyFile
+WARNING: No property list:
+/home/samer/.jxplorer/bookmarks.txt
+Jan 31, 2023 12:39:56 PM com.ca.commons.cbutil.CBUtility readPropertyFile
+WARNING: No property list:
+quicksearch.txt
+Jan 31, 2023 12:40:00 PM com.ca.commons.cbutil.CBUtility readPropertyFile
+WARNING: No property list:
+/home/samer/.jxplorer/connections.txt
+Jan 31, 2023 12:40:09 PM com.ca.directory.jxplorer.JXplorer shutdown
+WARNING: shutting down
